@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Threadline makes everyday clothes with a little more character.">
+    <title>Threadline | Clothes with character</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="announcement">Free delivery on orders over $100 <span>•</span> Easy 30-day returns</div>
+    <header class="site-header">
+        <a class="logo" href="#top" aria-label="Threadline home">THREAD<span>LINE</span></a>
+        <nav class="main-nav" aria-label="Main navigation"><a href="#shop">Shop all</a><a href="#shop" data-nav-filter="New in">New in</a><a href="#shop" data-nav-filter="Women">Women</a><a href="#shop" data-nav-filter="Men">Men</a><a href="#about">Our story</a></nav>
+        <div class="header-actions"><button class="icon-button search-toggle" aria-label="Search products">⌕</button><button class="icon-button" aria-label="Open shopping bag" id="cart-button">Bag <span class="cart-count">0</span></button><button class="menu-toggle" aria-label="Open menu">☰</button></div>
+    </header>
+    <main id="top">
+        <section class="hero"><div class="hero-copy"><p class="eyebrow">New season / 2024</p><h1>Get dressed<br><em>like you mean it.</em></h1><p class="hero-text">Thoughtful essentials, unexpected details, and the kind of fit you reach for on repeat.</p><a class="button button-dark" href="#shop">Shop the collection <span>↗</span></a></div><div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85" alt="Woman wearing a tailored neutral outfit"><div class="hero-sticker">Made for<br><strong>every day</strong> <span>✦</span></div></div><div class="hero-side-note">Scroll to explore <span>↓</span></div></section>
+        <section class="ticker" aria-label="Threadline promises"><div>GOOD CLOTHES <span>✳</span></div><div>BETTER DAYS <span>✳</span></div><div>MADE TO LAST <span>✳</span></div><div>GOOD CLOTHES <span>✳</span></div></section>
+        <section class="shop-section" id="shop"><div class="section-heading"><div><p class="eyebrow">The edit</p><h2>Find your<br><em>new uniform.</em></h2></div><p class="section-intro">A considered mix of soft tailoring, easy layers, and color that knows how to behave.</p></div><div class="shop-toolbar"><div class="filters" aria-label="Filter products"><button class="filter active" data-filter="All">All pieces</button><button class="filter" data-filter="New in">New in</button><button class="filter" data-filter="Women">Women</button><button class="filter" data-filter="Men">Men</button></div><label class="sort-label">Sort by <select id="sort-select"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div><div class="product-grid" id="product-grid"></div></section>
+        <section class="story-section" id="about"><div class="story-image"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85" alt="Clothing rack with colorful garments"></div><div class="story-copy"><p class="eyebrow">Why Threadline</p><h2>Less noise.<br><em>More you.</em></h2><p>We make pieces that earn their place in your wardrobe. Good materials, clever cuts, and no loud logos competing for attention.</p><a class="text-link" href="#shop">Meet your next favorite <span>↗</span></a></div></section>
+    </main>
+    <footer class="site-footer"><div><a class="logo footer-logo" href="#top">THREAD<span>LINE</span></a><p>Clothes with character.<br>Designed in Brooklyn, worn everywhere.</p></div><div class="footer-links"><a href="#shop">Shop</a><a href="#about">About us</a><a href="mailto:hello@threadline.example">Contact</a><a href="#top">Instagram</a></div><form class="newsletter" id="newsletter-form"><label for="email">Get the good stuff.</label><div><input id="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">→</button></div><small id="newsletter-message">Occasional notes, always worth opening.</small></form></footer>
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><h2>Your bag <span class="cart-count">0</span></h2><button class="close-button" id="close-cart" aria-label="Close shopping bag">×</button></div><div class="cart-items" id="cart-items"><p class="empty-cart">Your bag is feeling light.<br>Let's change that.</p></div><div class="cart-footer"><div class="total-row"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="button button-dark checkout-button" id="checkout-button">Checkout <span>↗</span></button><small>Taxes and shipping calculated at checkout.</small></div></aside><div class="drawer-overlay" id="drawer-overlay"></div><div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+</body>
+</html>
